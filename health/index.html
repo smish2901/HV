@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steps/Health Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tracker-container">
+        <header>
+            <h1>Steps Tracker</h1>
+            <button class="settings-icon">⚙️</button>
+        </header>
+        <main>
+            <div class="progress-circle" id="progress-circle">
+                <span id="step-count">0</span>
+                <span>steps</span>
+            </div>
+            <div class="statistics">
+                <div class="stat">
+                    <span id="calories">0</span>
+                    <span>Calories</span>
+                </div>
+                <div class="stat">
+                    <span id="distance">0</span>
+                    <span>Distance (km)</span>
+                </div>
+                <div class="stat">
+                    <span id="goal">10000</span>
+                    <span>Daily Goal</span>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p id="motivation">"Every step counts towards a healthier you!"</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

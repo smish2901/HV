@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('background.jpg'); /* Optional: Add your own background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tracker-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    border: 2px solid #a0e7e5; /* Pastel turquoise border */
+    backdrop-filter: blur(10px);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 1.8em;
+    color: #333;
+    font-weight: bold;
+}
+
+.settings-icon {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #a0e7e5; /* Pastel turquoise color */
+    transition: color 0.3s;
+}
+
+.settings-icon:hover {
+    color: #ffcad4; /* Pastel pink on hover */
+}
+
+.progress-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 15px solid #ffcad4; /* Pastel pink border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    position: relative;
+    background: rgba(255, 202, 212, 0.2); /* Light pastel pink background */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.progress-circle span {
+    font-size: 2.5em;
+    display: block;
+    color: #ffcad4; /* Pastel pink text */
+    font-weight: bold;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.stat {
+    background: #ffef96; /* Pastel yellow */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100px;
+    transition: transform 0.3s;
+}
+
+.stat:hover {
+    transform: translateY(-5px);
+}
+
+.stat span:first-child {
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 30px;
+    font-style: italic;
+    color: #7f7f7f; /* Light gray for contrast */
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, color 0.3s;
+}
+
+footer:hover {
+    background: #ffcad4; /* Light pastel pink on hover */
+    color: #fff; /* White text on hover */
+}
