@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Widget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="music-container">
+        <header>
+            <h1>Music Player</h1>
+        </header>
+        <main>
+            <div class="track-info">
+                <img id="album-art" src="default-art.jpg" alt="Album Art">
+                <div class="track-details">
+                    <h2 id="track-title">Track Title</h2>
+                    <p id="track-artist">Track Artist</p>
+                </div>
+            </div>
+            <audio id="audio-player" controls>
+                <source id="audio-source" src="track1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="controls">
+                <button id="prev-button">⏮️</button>
+                <button id="play-button">▶️</button>
+                <button id="pause-button">⏸️</button>
+                <button id="next-button">⏭️</button>
+            </div>
+            <input id="volume-control" type="range" min="0" max="1" step="0.01" value="0.5">
+        </main>
+        <footer>
+            <ul id="playlist">
+                <li data-src="track1.mp3" data-title="Track 1" data-artist="Artist 1" data-art="art1.jpg">Track 1</li>
+                <li data-src="track2.mp3" data-title="Track 2" data-artist="Artist 2" data-art="art2.jpg">Track 2</li>
+                <!-- Add more tracks as needed -->
+            </ul>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
