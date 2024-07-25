@@ -1,0 +1,15 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const pollQuestionInput = document.getElementById('poll-question');
+    const pollOptionsContainer = document.getElementById('poll-options');
+    const addOptionButton = document.getElementById('add-option');
+    const createPollButton = document.getElementById('create-poll');
+    const startPollButton = document.getElementById('start-poll');
+    const stopPollButton = document.getElementById('stop-poll');
+    const resetPollButton = document.getElementById('reset-poll');
+    const pollResults = document.getElementById('poll-results');
+    const resultsChart = document.getElementById('results-chart');
+    const currentPoll = document.getElementById('current-poll');
+    const currentQuestion = document.getElementById('current-question');
+    const currentOptions = document.getElementById('current-options');
+    const submitVoteButton = document.getElementById('submit-vote');
+    const userResults = document.getElementById('

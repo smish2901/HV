@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Widget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="poll-container">
+        <header>
+            <h1>Admin Poll</h1>
+        </header>
+        <main id="admin-view">
+            <div class="poll-creation">
+                <input type="text" id="poll-question" placeholder="Enter poll question">
+                <div id="poll-options">
+                    <input type="text" class="poll-option" placeholder="Option 1">
+                    <input type="text" class="poll-option" placeholder="Option 2">
+                </div>
+                <button id="add-option">Add Option</button>
+                <button id="create-poll">Create Poll</button>
+            </div>
+            <div class="poll-controls">
+                <button id="start-poll">Start Poll</button>
+                <button id="stop-poll">Stop Poll</button>
+                <button id="reset-poll">Reset Poll</button>
+            </div>
+            <div id="poll-results">
+                <h2>Poll Results</h2>
+                <div id="results-chart"></div>
+            </div>
+        </main>
+        <main id="user-view">
+            <div id="current-poll">
+                <h2 id="current-question">Poll Question</h2>
+                <div id="current-options"></div>
+                <button id="submit-vote">Submit Vote</button>
+            </div>
+            <div id="user-results">
+                <h2>Poll Results</h2>
+                <div id="user-results-chart"></div>
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
