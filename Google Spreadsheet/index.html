@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Spreadsheet Widget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="spreadsheet-container">
+        <header>
+            <h1>Google Spreadsheet</h1>
+            <div class="controls">
+                <select id="sheet-selector">
+                    <option value="Sheet1">Sheet 1</option>
+                    <option value="Sheet2">Sheet 2</option>
+                    <!-- Add options for additional sheets -->
+                </select>
+                <button id="refresh-button">🔄</button>
+            </div>
+        </header>
+        <main>
+            <iframe id="spreadsheet" src="https://docs.google.com/spreadsheets/d/YOUR_SPREADSHEET_ID/edit?usp=sharing"></iframe>
+        </main>
+        <footer>
+            <p>Use the sheet selector to switch between sheets. Your changes are saved automatically.</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
