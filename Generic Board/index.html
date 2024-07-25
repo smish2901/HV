@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generic Leaderboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="leaderboard-container">
+        <header>
+            <h1>Leaderboard</h1>
+        </header>
+        <section id="leaderboard">
+            <div class="category">
+                <h2>Most Steps Walked</h2>
+                <div id="steps-leaderboard" class="leaderboard-list"></div>
+            </div>
+            <div class="category">
+                <h2>Most Pages Read</h2>
+                <div id="pages-leaderboard" class="leaderboard-list"></div>
+            </div>
+            <div class="category">
+                <h2>Most Pomodoro Timers Clocked</h2>
+                <div id="pomodoro-leaderboard" class="leaderboard-list"></div>
+            </div>
+        </section>
+        <div class="filters">
+            <label for="category-select">Filter by Category:</label>
+            <select id="category-select">
+                <option value="all">All</option>
+                <option value="steps">Most Steps Walked</option>
+                <option value="pages">Most Pages Read</option>
+                <option value="pomodoro">Most Pomodoro Timers Clocked</option>
+            </select>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
