@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #e8e9eb);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.pomodoro-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    width: 300px;
+    max-width: 90%;
+    text-align: center;
+    border: 2px solid #4a90e2;
+}
+
+.timer-display {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4a90e2;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.controls button:hover {
+    background-color: #357abd;
+    transform: scale(1.05);
+}
+
+.controls button:active {
+    background-color: #2c6aa0;
+    transform: scale(0.95);
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.settings label {
+    font-size: 1em;
+    color: #666;
+}
+
+.settings input {
+    padding: 5px;
+    width: 60px;
+    border-radius: 5px;
+    border: 1px solid #b3e5fc;
+    font-size: 1em;
+    text-align: center;
+}
