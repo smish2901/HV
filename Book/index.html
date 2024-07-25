@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book + Quote Widget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="book-quote-container">
+        <header>
+            <h1>Book + Quote</h1>
+        </header>
+        <main id="admin-view">
+            <div class="book-quote-inputs">
+                <input type="text" id="book-title" placeholder="Enter book title">
+                <textarea id="book-quote" placeholder="Enter quote"></textarea>
+                <button id="update-book-quote">Update</button>
+            </div>
+        </main>
+        <main id="user-view">
+            <div id="current-book">
+                <h2 id="current-title">Book Title</h2>
+                <blockquote id="current-quote">Book quote will appear here.</blockquote>
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
