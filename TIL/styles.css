@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to right, #e3f2fd, #fce4ec);
+}
+
+.til-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    max-width: 90%;
+    border: 1px solid #b3e5fc;
+    backdrop-filter: blur(8px);
+}
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #64b5f6;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+#til-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.til-card {
+    background: #ffffff;
+    border: 1px solid #b3e5fc;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.til-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.til-card h2 {
+    font-size: 1.4em;
+    color: #ff8a80;
+    margin: 0 0 10px;
+}
+
+.til-card p {
+    font-size: 1em;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.til-card a {
+    font-size: 1em;
+    color: #64b5f6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.til-card a:hover {
+    color: #4285f4;
+}
