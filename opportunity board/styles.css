@@ -1,0 +1,154 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to right, #e0f7fa, #fce4ec);
+}
+
+.opportunity-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 500px;
+    max-width: 90%;
+    border: 1px solid #b2dfdb;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.opportunity-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+    z-index: 0;
+    animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.opportunity-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+header h1 {
+    font-size: 1.8em;
+    color: #81d4fa;
+    font-weight: bold;
+}
+
+#opportunity-form {
+    margin-bottom: 20px;
+}
+
+#opportunity-title, #opportunity-description, #opportunity-team {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #b2dfdb;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#opportunity-title:focus, #opportunity-description:focus, #opportunity-team:focus {
+    border-color: #4fc3f7;
+    box-shadow: 0 0 5px rgba(79, 195, 247, 0.5);
+}
+
+#submit-opportunity {
+    background: linear-gradient(45deg, #4fc3f7, #80deea);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#submit-opportunity:hover {
+    background: linear-gradient(45deg, #80deea, #4fc3f7);
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(79, 195, 247, 0.3);
+}
+
+#opportunity-list {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#search-opportunity {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #b2dfdb;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#search-opportunity:focus {
+    border-color: #4fc3f7;
+    box-shadow: 0 0 5px rgba(79, 195, 247, 0.5);
+}
+
+#opportunities {
+    border: 1px solid #b2dfdb;
+    border-radius: 8px;
+    padding: 10px;
+    background: #fff;
+}
+
+.opportunity-item {
+    border-bottom: 1px solid #b2dfdb;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.opportunity-item:last-child {
+    border-bottom: none;
+}
+
+.opportunity-item:hover {
+    background: #e0f2f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.opportunity-item .status {
+    font-weight: bold;
+    color: #4caf50;
+}

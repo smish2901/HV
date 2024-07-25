@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunity Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="opportunity-container">
+        <header>
+            <h1>Opportunity Board</h1>
+        </header>
+        <main id="opportunity-form">
+            <input type="text" id="opportunity-title" placeholder="Opportunity Title">
+            <textarea id="opportunity-description" placeholder="Describe the opportunity..."></textarea>
+            <select id="opportunity-team">
+                <option value="">Select Team</option>
+                <option value="AI">AI Team</option>
+                <option value="Engineering">Engineering Team</option>
+                <option value="Marketing">Marketing Team</option>
+                <!-- Add more teams as needed -->
+            </select>
+            <button id="submit-opportunity">Submit Opportunity</button>
+        </main>
+        <section id="opportunity-list">
+            <input type="text" id="search-opportunity" placeholder="Search Opportunities...">
+            <div id="opportunities"></div>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
