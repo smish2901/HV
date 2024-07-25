@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Widget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-container">
+        <header>
+            <h1>Weather</h1>
+            <input type="text" id="location-input" placeholder="Enter location">
+            <button id="search-button">Search</button>
+        </header>
+        <section id="current-weather">
+            <div class="weather-icon">
+                <img src="sunny-icon.png" alt="Weather Icon" id="weather-icon">
+            </div>
+            <div class="weather-info">
+                <h2 id="temperature">25°C</h2>
+                <p id="weather-condition">Sunny</p>
+                <p id="location">New York</p>
+            </div>
+        </section>
+        <section id="forecast">
+            <div class="forecast-item">
+                <h3>Tomorrow</h3>
+                <img src="cloudy-icon.png" alt="Weather Icon">
+                <p>22°C / 18°C</p>
+            </div>
+            <!-- More forecast items go here -->
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
