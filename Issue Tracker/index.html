@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Tracker Widget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="issue-tracker-container">
+        <header>
+            <h1>Issue Tracker</h1>
+        </header>
+        <main id="issue-form">
+            <div class="issue-inputs">
+                <input type="text" id="issue-title" placeholder="Issue Title">
+                <textarea id="issue-description" placeholder="Issue Description"></textarea>
+                <select id="issue-priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button id="submit-issue">Submit Issue</button>
+            </div>
+            <p id="submission-message"></p>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
